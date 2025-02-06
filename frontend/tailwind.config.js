@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  mode:"jit",
   theme: {
-    extend: {},
+    fontFamily: {
+      Roboto: ["Roboto", "sans-serif"],
+      Poppins: ["Poppins", "sans-serif"],
+    },
+    extend: {
+    },
   },
   plugins: [],
-}
+};
