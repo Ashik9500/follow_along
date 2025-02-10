@@ -1,5 +1,5 @@
-import React from 'react';
-import Login from "../components/auth/Login"
+import React from 'react'
+import Login from '../components/auth/login';
 function LoginPage() {
   return (
     <div>
@@ -8,4 +8,6 @@ function LoginPage() {
   )
 }
 
+
 export default LoginPage;
+
