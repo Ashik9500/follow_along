@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 import { Link } from 'react-router-dom';
 import axios from "axios";
 
@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submit behavior
     try {
-      
+      // Make the POST request to the backend (replace with your actual API endpoint)
       const response = await axios.post("http://localhost:8000/api/v2/user/login", { email, password });
       
       // Assuming response contains a token or user data on successful login
@@ -68,7 +68,7 @@ const Login = () => {
                     </button>
                 </div>
                 {error && <p className="text-center text-red-900">{error}</p>} {/* Display error message if there is one */}
-                <p className="text-center text-red-900">Don't have an account? <Link to={'/signup'} className="text-blue-600">Sign up</Link></p>
+                <p className="text-center text-red-900">Dont have an account? <Link to={'/signup'} className="text-blue-600">Sign up</Link></p>
             </form>
         </div>
       </div>
